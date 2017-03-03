@@ -11,6 +11,8 @@ public class Article {
 
     private Author author;
 
+    private String text;
+
     public String getTitle() {
         return title;
     }
@@ -33,5 +35,18 @@ public class Article {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    @Override
+    public String toString(){
+        return new StringBuilder("Article with id ").append(id).append(", title: ").append(title).append(",text: ").append(text).toString();
     }
 }

@@ -12,6 +12,9 @@ import java.sql.SQLException;
 public abstract class SimpleJDBCDao<T> implements AbstractDao<T>{
     protected Connection connection = null;
 
+    public SimpleJDBCDao(){
+        init();
+    }
 
     @Override
     public void init()  {
