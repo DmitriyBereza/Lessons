@@ -47,6 +47,6 @@ public class Article {
 
     @Override
     public String toString(){
-        return new StringBuilder("Article with id ").append(id).append(", title: ").append(title).append(",text: ").append(text).toString();
+        return new StringBuilder("Article with id ").append(id).append(", title: ").append(title).append(",text: ").append(text).append("\n").toString();
     }
 }
